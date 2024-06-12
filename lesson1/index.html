@@ -5,61 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" href="icon.jpg" >
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <header>
     <h1>My Goals for the Year</h1>
-    <hr>
+        <nav aria-label="primary navigation">
+            <ul>
+                <li><a href="#Learning"> Learning HTML</a>  </li>
+                <li><a href="#Vacation">Planning a Vacation</a>  </li>
+            </ul>
+            
+        </nav>
+    </header>
+   
+    <main>
 
-    <nav>
-        <ul>
-            <li><a href="#Learning"> Learning HTML</a>  </li>
-            <li><a href="#Vacation">Planning a Vacation</a>  </li>
-        </ul>
-        
-    </nav>
-
-    <section id="Learning">
+    <article id="Learning">
         <h2>I'm Ready to Learn HTML</h2>
         <p>This is my first webpage</p>
-        <h3>My Daily Schedule</h3>
-        <p>Let me trll you how:</p>
-        <ol>
-            <li>I learn more about web dev</li>
-            <li>I plan out my schedule</li>
-            <li>I use resources from <a href="https://developer.mozilla.org/"><abbr title="MozillaDeveloperNetwork">MDN</abbr></a></li>
-        </ol>
-    </section>
+        <section>
+                <h3>HTML5</h3>
+                <img src="img/html_logo_300x300.png" alt="HTML5 logo" title="I am learning HTML5" width="300" height="300" loading="eager">
+                <figure>
+                    <figcaption>An example of html code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                    </p>
+            </figure>
+        </section>
+        <section>
+            <h3>My Daily Schedule</h3>
+            <p>Let me trll you how:</p>
+            <ol>
+                <li>I learn more about web dev</li>
+                <li>I plan out my schedule</li>
+                <li>I use resources from <a href="https://developer.mozilla.org/"><abbr title="MozillaDeveloperNetwork">MDN</abbr></a></li>
+            </ol>
+            <aside>
+                <details>
+                    <summary>Guess the <mark>number of hours</mark>  I code in a day?</summary>
+                    <p>I start at <time datetime="8:00"> 8 am</time> and write for <time datetime="PT3H">3 hours</time> every morning</p>
+                </details>
+            </aside>
+            <br>
+            <table>
+                <caption>My Daily Schedule</caption>
+                <thead>
+                    <tr>
+                        <th >&nbsp;</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th></tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Morning</th>
+                        <td> <time datetime="08:00">8am</time>- <time datetime="11:00">11am</time></td>
+                        <td>Write Code</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">break </th>
+                        <td> <time datetime="11:00">11am</time>- <time datetime="12:00">12pm</time></td>
+                        <td>Eat Lunch</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">afternoon</th>
+                        <td> <time datetime="12:00">12pm</time>- <time datetime="17:00">5pm</time></td>
+                        <td>Study for Other courses</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">evening</th>
+                        <td rowspan="2">All other times</td>
+                        <td>free time</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Night</th>
+                        <td>sleep</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And that's what I do everyday, 5days a week.</td>
+                </tr>
+            </tfoot>
+            </table>
+        </section>
+    </article>
     <hr>
     
-    <section id="Vacation">
-        <h2>I'm also planning a Vacation</h2>
-        <p>I've been working hard and <em>really need a getaway.</em></p>
-        <p>I live in <abbr title="Kansas City">KS</abbr> so I want to visit a beach</p>
-        <h3>Places I'd like to visit</h3>
-        <ul>
-            <li><p>I've heard good things about the Caribbean.</p></li>
-            <li><p>I've heard good things about going here:</p>
-                <address>Margaritaville Island Reserve Riviera Cancún <br>
-                    Bahia Petempich Puerto Morelos, Mexico<br>
-                    Colonia Morelos, México 77580</address>
-            </li>
-        </ul>
+        <article id="Vacation">
+            <h2>I'm also planning a Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway.</em></p>
+            <p>I live in <abbr title="Kansas City">KS</abbr> so I want to visit a beach</p>
+            <section>
+                <h3>Places I'd like to visit</h3>
+                <ul>
+                    <li><p>I've heard good things about the Caribbean.</p>
+                        <figure>
+                        <img src="img/caribbean.jpg" alt="caribean beach" title="I want to visit beach" width="400" height="225" loading="lazy">
+                        <figcaption>
+                            Caribean beach getaway
+                        </figcaption>
+                        </figure>
+                    </li>
+                    <li><p>I've heard good things about going here:</p>
 
-       
-        <h3>Places I want to avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold!</strong></dd>
-            <dt>South Pole</dt>
-            <dd>this is cold too!</dd>
-            <dt>Mountain top</dt>
-            <dd>These are also cold.</dd>
-        </dl>
-    </section>
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Tusharika</a>&gt;&gt;&gt;
-    <p>
-        <a href="#">Back to top</a>
-    </p>
+                        <address>Margaritaville Island Reserve Riviera Cancún <br>
+                            Bahia Petempich Puerto Morelos, Mexico<br>
+                            Colonia Morelos, México 77580</address>
+                            <figure>
+                            <img src="img/vacation.jpg" alt="cancun vacation" width="400" height="267" title="its 5'o clock somewhere" load="lazy">
+                            <figcaption>A caribean vacation image</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            
+            <section>
+            <h3>Places I want to avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold!</strong></dd>
+                    <dt>South Pole</dt>
+                    <dd>this is cold too!</dd>
+                    <dt>Mountain top</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+    <footer>   
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Tusharika</a>&gt;&gt;&gt;
+            <a href="#">Back to top</a>
+        </p>
+    </footer>
 </body>
 </html>
+<!--loading by default is set to eager if not mentioned lazy
+
+    semantic rules: 
+    h1 only one , like title 
+    h2, h3 for sub topics.
+    ideally h1, h2 , h3 are enough on a page else it gets clumsy
+
+    hr tags represent a shift in topic 
+    nav meaning navigation
+    section means  grp 
+    these tags have a meaning in themselves
+
+    we add 1 or more than 1 header section h1+ nav 
+    add one main 
+    1 or more than 1 footer
+
+    article vs section : clearly defined topic use article , less clear make a section
+
+    div, span has no semantic meaning,stands for divider.
+
+    html outliner extension
+-->
